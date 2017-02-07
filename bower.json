@@ -1,0 +1,31 @@
+{
+  "name": "starAdmin",
+  "version": "0.0.1",
+  "description": "starAdmin",
+  "main": [],
+  "dependencies": {
+    "jquery": "~1.12.2",
+    "bootstrap": "~3.3.7",
+    "font-awesome": "~4.3.0"
+  },
+  "devDependencies": {},
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    ""
+  ],
+  "authors": [
+    "guochao"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
