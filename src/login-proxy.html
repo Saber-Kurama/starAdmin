@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<title>starAdmin - proxyLogin</title>
+		<link rel="stylesheet" href="css/login-proxy.css" />
+	</head>
+
+	<body>
+		<form method="post" action="#" role="form" id="login" class="login-form">
+			<div class="login-header">
+				<div class="logo-proxy"></div>
+				<div class="logo-bg"></div>
+			</div>
+
+			<div class="right-box">
+				<div class="user-group">
+					<label class="user-icon" for="username"></label>
+					<input type="text" class="username" name="username" id="username" placeholder="用户名" autocomplete="off" />
+				</div>
+
+				<div class="password-group">
+					<label class="password-icon" for="password"></label>
+					<input type="password" class="password" name="passwd" id="password" placeholder="密码" autocomplete="off" />
+				</div>
+				<!--验证码-->
+				<div class="vertcode">
+					<div class="vert-group">
+						<label class="password-icon" for="password"></label>
+						<input type="text" class="vert-code" name="vert-code" id="vert-code" placeholder="验证码" autocomplete="off" />
+					</div>
+					<img src="images/cert_code.png" class="vert-img" alt="" />
+				</div>
+				<!--/验证码-->	
+				<button type="submit" class="login-btn">登录</button>
+			</div>
+
+		</form>
+		<p class="login-footer">© 2002-2017 <span>北京彼速信息科技有限公司.</span>All Rights Reserved</p>
+
+	</body>
+
+</html>

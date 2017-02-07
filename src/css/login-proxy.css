@@ -1,0 +1,185 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: url(../images/login_proxy_bg.jpg) top center no-repeat;
+	overflow: hidden;
+}
+
+#login{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   width: 702px;
+   height: 308px;
+   margin-left: -355px;
+   background: #ffffff;
+   border-radius: 10px;
+   border: 1px #aaa7b0;	
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.55);
+   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.55);
+}
+
+.login-header{
+	position: relative;
+	float: left;
+	width: 373px;
+	height: 308px;
+	border-right: 1px solid #aaa7b0;
+}
+.logo-proxy{
+	width: 323px;
+	height: 49px;
+	background: url(../images/login_proxy_bg.png) top center no-repeat;
+	margin-top: 20px;
+	margin-left: 25px;
+	z-index: 10;
+}
+
+.logo-bg{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 372px;
+	height: 268px;
+	background: url(../images/proxy_bg.png) top center no-repeat;
+	z-index: 5;
+}
+
+.right-box{
+	float: right;
+	width: 329px;
+	height: 308px;	
+}
+
+.user-group{
+	position: relative;
+	width: 294px;
+	height: 50px;
+	border-radius: 4px;
+	margin: 0 auto;
+	border: 1px solid #b5babd;
+	background: #f2f7f8;
+	margin-top: 43px;
+    box-sizing: border-box;
+}
+
+.password-group{
+	position: relative;
+	width: 294px;
+	height: 50px;
+	border-radius: 4px;
+	margin: 0 auto;
+	border: 1px solid #b5babd;
+	background: #f2f7f8;
+	margin-top: 12px;
+    box-sizing: border-box;
+}
+
+.vert-group{
+	position: relative;
+	float: left;
+	width: 178px;
+	height: 50px;
+	border-radius: 4px;
+	margin: 0 auto;
+	border: 1px solid #b5babd;
+	background: #f2f7f8;
+	margin-top: 12px;
+	margin-left: 19px;
+    box-sizing: border-box;
+}
+
+.username, .password{
+	display: inline-block;
+    width: 236px;
+    float: right;
+    height: 46px;
+    margin-right: 2px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family:"黑体";
+    color: #9da8ab;
+    background: #f2f7f8;
+}
+
+.vertcode{
+	position: relative;
+}
+
+.vert-code{
+	display: inline-block;
+	width: 120px;
+    float: right;
+    height: 46px;
+    margin-right: 2px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-family:"黑体";
+    color: #9da8ab;
+    background: #f2f7f8;
+}
+
+.vert-img{
+	width: 105px;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn{
+	width: 294px;
+	height: 50px;
+	background: #2eabff;
+	margin: 0 auto;
+	margin-left: 16px;
+	font-family: "黑体";
+	font-size: 18px;	
+	margin-top: 12px;
+	margin-left: 19px;
+	color: #FFFFFF;
+	-webkit-appearance: none;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.user-icon{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-left: 14px;
+	margin-top: 10px;
+	background: url(../images/inline_user_icon.png) top center no-repeat;
+}
+
+.password-icon{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-left: 14px;
+	margin-top: 10px;
+	background: url(../images/inline_pwd_icon.png) top center no-repeat;
+}
+
+.login-footer{
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin: 0 auto;
+	margin-left: -177px;
+	font-size: 12px;
+	font-family: Arial;
+	color: #FFFFFF;
+}
+
+.login-footer span{
+	font-family: "黑体";
+}
