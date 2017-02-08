@@ -40,6 +40,6 @@ gulp.task('copyjson', function(){
       .pipe(gulp.dest(config.copy.json.dest));
 })
 
-gulp.task('copyassests',['copyfonts','copyjs', 'copyjson'],function(){
+gulp.task('copyassests',['copycss','copyfonts','copyjs', 'copyjson'],function(){
   
 });
