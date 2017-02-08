@@ -132,7 +132,7 @@ input:-webkit-autofill:active {
 
 .info-list{
 	position: absolute;
-    bottom: 95px;
+    bottom: 85px;
     right: 50px;
     width: 379px;
     height: 203px;	
@@ -142,7 +142,7 @@ input:-webkit-autofill:active {
 	position: relative;
 	width: 379px;
 	height: 30px;
-	background: #d3edf5;
+	background: rgba(255,255,255,.8);
 	border: 2px solid #478ead;
 	border-bottom: none;
 	border-top-left-radius: 10px;
@@ -176,7 +176,7 @@ input:-webkit-autofill:active {
 .info-content{
 	width: 379px;
 	height: 173px;
-	background: #bfe3f0;	
+	background: rgba(255,255,255,.75);	
 	border: 2px solid #478ead;
 	border-top: none;	
 	border-bottom-left-radius: 10px;
@@ -249,4 +249,15 @@ input:-webkit-autofill:active {
 }
 .more-info:hover{
 	text-decoration: none;
+}
+
+.info-list::after{
+	content: '';
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    background: url(../images/sj_icon.png) top center no-repeat;
+    margin-top: -2px;
+    right: 61px;
+    opacity: .9;
 }
