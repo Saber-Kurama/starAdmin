@@ -1,0 +1,54 @@
+.sub-wrapper {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  overflow: auto;
+  height: 100%;
+  position: relative;
+  padding-top: 68px;
+}
+.star-layout-static {
+  display: table-row;
+  height: 100%;
+}
+.star-static-sidebar-wrapper {
+  display: table-cell;
+  overflow: hidden;
+  width: 256px;
+  background: #f9fafe;
+}
+.star-static-content-wrapper {
+  display: table-cell;
+  width: 100%;
+}
+.breadcrumb {
+  border-radius: 0;
+  padding: 10px 15px;
+  background: #e9ecf2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+.star-breadcrumb-row {
+  margin: 0;
+}
+.breadcrumb .glyph {
+  height: 14px;
+  width: 14px;
+  margin: -2px 0 0 0;
+  stroke-width: 4px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.glyph {
+  fill: currentColor;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 70%;
+  height: 70%;
+}
+/*# sourceMappingURL=layout.css.map */
