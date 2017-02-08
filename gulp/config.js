@@ -13,7 +13,9 @@ module.exports = {
 
   'copy': {
     css:{
-      src: ['bower_components/bootstrap/dist/css/bootstrap.min.css','src/css/*'],
+      src: ['bower_components/bootstrap/dist/css/bootstrap.min.css',
+            'bower_components/font-awesome/css/font-awesome.min.css',
+      'src/css/*'],
       dest: 'dist/css',
     },
     js:{
@@ -21,7 +23,10 @@ module.exports = {
       dest:'dist/js'
     },
     fonts:{
-      src: ["src/fonts/*",'bower_components/bootstrap/dist/fonts/*'],
+      src: ["src/fonts/*",
+      'bower_components/bootstrap/dist/fonts/*',
+      'bower_components/font-awesome/fonts/*'
+      ],
       dest: 'dist/fonts'
     },
     images:{

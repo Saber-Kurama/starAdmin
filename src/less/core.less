@@ -25,3 +25,33 @@ body {
   -webkit-user-select: auto;
   user-select: auto;
 }
+
+// Links
+a {
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s ease;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:active {
+    color: inherit;
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+
+  &[disabled] {
+    color: inherit;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

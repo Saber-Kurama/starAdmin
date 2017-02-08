@@ -21,7 +21,7 @@
     <div class="navbar star-navbar">
         <!-- logo -->
         <div class="star-logo-area"></div>
-        <!-- 菜单-->
+        <!-- 头部中间菜单-->
         <ul class="nav navbar-nav toolbar star-navbar-toolbar-ul">
             <li class="star-navbar-toolbar-li active">
                 <a>
@@ -72,7 +72,8 @@
                 </a>
             </li>
         </ul>
-        
+        <!-- 头部中间菜单 end-->
+        <!-- 头部右侧菜单 -->
          <ul class="nav navbar-nav toolbar star-navbar-toolbar-ul1 pull-right">
             <li class="star-navbar-toolbar-li1">
                 <a>
@@ -102,21 +103,31 @@
                   </ul>
             </li>
         </ul>
+        <!-- 头部右侧菜单 end-->
     </div>
+    <!-- 页面布局 -->
     <div class="sub-wrapper">
         <div class="star-layout-static"> 
+            <!-- 页面 右侧菜单布局-->
             <div class="star-static-sidebar-wrapper">
                 <div class="star-sidebar-menu-wrapper">
+                    <!-- 页面 右侧菜单 -->
                     <ul class="star-sidebar-menu">
-                        <li class="hasChild ">
+                        <li class="hasChild open">
                             <a>
                                 <i class="glyphicon glyphicon-home"></i>
                                 <span>提案管理</span>
                             </a>
                             <ul class="star-sidebar-submenu">
-                                <li>提案查询</li>
-                                <li>提案查询</li>
-                                <li>提案查询</li>
+                                <li class="active">
+                                    <a>提案查询</a>
+                                </li>
+                                <li>
+                                    <a>提案查询</a>
+                                </li>
+                                <li>
+                                    <a>提案查询</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="hasChild">
@@ -124,18 +135,51 @@
                                 <i class="glyphicon glyphicon-home"></i>
                                 <span>专利管理</span>
                             </a>
-                            <ul>
+                            <ul class="star-sidebar-submenu">
+                                <li>
+                                    <a>提案查询</a>
+                                </li>
+                                <li>
+                                    <a>提案查询</a>
+                                </li>
+                                <li>
+                                    <a>提案查询</a>
+                                </li>
                             </ul>
                         </li>
 
-                    </ul>    
+                    </ul>  
+                    <!-- 页面 右侧菜单 end-->  
                 </div>
             </div>
+            <!-- 页面 右侧菜单布局 end-->
+            <!-- 页面内容 -->
             <div class="star-static-content-wrapper">
+                <div class="row star-breadcrumb-row">
+                    <ol class="breadcrumb">
+                        <li><a href="#"><svg class="glyph stroked home"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroked-home"></use></svg></a></li>
+                        <li class="active">Icons</li>
+                    </ol>
+                </div>
             </div>
+            <!-- 页面内容 end-->
         </div>
     </div>
+    <!-- 页面布局 end-->
 <script src="<!-- @echo WEB_ROOT -->/js/vendors.js"></script>
+<!-- @if NODE_ENV!='production' -->
+<!-- build:js /js/index.min.js -->
+<script src="<!-- @echo WEB_ROOT -->/js/app.js"></script>
+<!-- endbuild -->
+<!--@endif-->
+<!-- @if NODE_ENV=='production' -->
+<script src="<!-- @echo WEB_ROOT -->/js/index.min.js"></script>
+<!--@endif-->
+<script>
+    $(function() {
+        App.init();
+    })
+</script>
 </body>
 
 </html>
