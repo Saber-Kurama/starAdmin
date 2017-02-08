@@ -16,6 +16,8 @@ gulp.task('watch', ['browserSync', 'server'], function() {
   ////gulp.watch(config.styles.watch, ['styles']);
   //// 检测 less
   gulp.watch(config.styles.watch, ['styles']);
+  //检测css
+  gulp.watch('src/css/*',['copycss', 'reload']);
   //// 检测 images
   ////gulp.watch(config.images.src, ['images', 'reload']);
   gulp.watch(config.views.src, ['views', 'reload']);
