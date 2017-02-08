@@ -13,15 +13,15 @@ module.exports = {
 
   'copy': {
     css:{
-      src: [],
-      dest: [],
+      src: ['bower_components/bootstrap/dist/css/bootstrap.min.css','src/css/*'],
+      dest: 'dist/css',
     },
     js:{
       src:['src/lib/hotcss.js'],
       dest:'dist/js'
     },
     fonts:{
-      src: ["src/fonts/*"],
+      src: ["src/fonts/*",'bower_components/bootstrap/dist/fonts/*'],
       dest: 'dist/fonts'
     },
     images:{
@@ -50,8 +50,7 @@ module.exports = {
     'dist':'vendors.js',
     'src': [
       'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/jquery.imgpreload/jquery.imgpreload.js',
-      'bower_components/fastclick/lib/fastclick.js'
+      'bower_components/bootstrap/dist/js/bootstrap.min.js'
     ],
     'dest': 'dist/js'
   },
