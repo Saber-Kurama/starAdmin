@@ -36,9 +36,9 @@ input:-webkit-autofill:active {
 	border-right: 1px solid #aaa7b0;
 }
 .logo-proxy{
-	width: 323px;
+	width: 327px;
 	height: 49px;
-	background: url(../images/login_proxy_bg.png) top center no-repeat;
+	background: url(../images/logo-proxy.png) top center no-repeat;
 	margin-top: 20px;
 	margin-left: 25px;
 	z-index: 10;
