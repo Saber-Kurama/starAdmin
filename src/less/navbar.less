@@ -34,7 +34,7 @@
     border: 1px solid #8ecffa;
     padding: 0;
     line-height: 28px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     height: 28px;
     width: 28px;
@@ -44,6 +44,17 @@
     display: inline-block;
     font-size: 12px;
     color: #8ecffa;
+}
+
+.nav > li.star-navbar-toolbar-li > a:focus, .nav > li.star-navbar-toolbar-li > a:hover{
+    background-color: #1a9eee;
+    .star-navbar-iconbg{
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    .star-navbar-iconText{
+        color: #fff;
+    }
 }
 
 .star-navbar-toolbar-li.active{
@@ -73,6 +84,23 @@
     padding: 16px 5px;
 }
 
+.nav.star-navbar-toolbar-ul1  > li> a:focus, .nav.star-navbar-toolbar-ul1 > li > a:hover{
+    background-color: #1a9eee;
+    color: #fff;
+    // .star-navbar-iconbg{
+    //     border: 1px solid #fff;
+    //     color: #fff;
+    // }
+    // .star-navbar-iconText{
+    //     color: #fff;
+    // }
+}
+.nav.star-navbar-toolbar-ul1 .open>a, .nav.star-navbar-toolbar-ul1 .open>a:focus, .nav.star-navbar-toolbar-ul1 .open>a:hover{
+    background-color: #1a9eee;
+    border-color: none;
+    color: #fff;
+}
+
 .star-navbar-iconbg1{
     display: inline-block;
     border-radius: 18px;
@@ -89,11 +117,14 @@
     height: 32px;
     width: 1px;
     background-color: #fff;
-    margin: 16px 0;
-    margin-right: 10px;
+    margin: 16px 10px;
+    // margin-right: 10px;
 }
 .star-user-profile{
     color: #fff;
+    &:active, &:hover{
+         color: #fff;
+    }
     img{
         width: 36px;
         height: 36px;

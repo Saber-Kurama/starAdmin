@@ -1,31 +1,39 @@
 .sub-wrapper{
-    display: table;
+    // display: table;
     width: 100%;
-    table-layout: fixed;
+    // table-layout: fixed;
     overflow: auto;
     height: 100%;
     position: relative;
     padding-top: 68px; 
+    // padding-left: 256px; 
 }
 .star-layout-static{
-    display: table-row;
+    // display: table-row;
     height: 100%;
 }
 .star-static-sidebar-wrapper{
-    display: table-cell;
+    // display: table-cell;
     overflow: hidden;
     width: 256px;
     background: #f9fafe;
+    border-right: 1px solid #E0E2ED; 
+    float: left;
 }
 .star-static-content-wrapper{
-    display: table-cell;
-    width: 100%;
+    // display: table-cell;
+    
+    position: relative;
+    height: 100%;
+    margin-left: 256px;
+    padding-top: 40px;
 }
 
 .breadcrumb {
     border-radius: 0;
     padding: 10px 15px;
-    background: #e9ecf2;
+    background: #F4F5F6;
+    border-bottom: 1px solid #E0E2ED; 
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
     margin: 0;
     font-size: 12px;
@@ -36,6 +44,10 @@
 .star-breadcrumb-row{
     margin: 0;
     font-size: 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 .breadcrumb .glyph {
     height: 14px;
@@ -56,4 +68,12 @@ svg:not(:root) {
     vertical-align: middle;
     width: 70%;
     height: 70%;
+}
+
+.star-content-wrapper{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fff; 
+    padding: 10px 20px;
 }
