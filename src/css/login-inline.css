@@ -33,7 +33,7 @@ input:-webkit-autofill:active {
 .login-header {
 	width: 208px;
 	height: 120px;
-	background: url(../images/inline_logo.png) top center no-repeat;
+	background: url(../images/inline-logo.png) top center no-repeat;
 	margin: 0 auto;
 	margin-top: 20px;
 }
@@ -125,12 +125,16 @@ input:-webkit-autofill:active {
 	cursor: pointer;
 }
 
-.ex-info:hover {
+.popover-news:hover .ex-info {
 	background: url(../images/ex_info_active.png) top center no-repeat;
 	opacity: 1;
 }
+.popover-news:hover .info-list{
+	display: block;
+}
 
 .info-list{
+	display: none;
 	position: absolute;
     bottom: 85px;
     right: 50px;
