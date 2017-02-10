@@ -1,0 +1,83 @@
+.sub-wrapper {
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  position: relative;
+  padding-top: 68px;
+}
+.star-layout-static {
+  height: 100%;
+}
+.star-static-sidebar-wrapper {
+  overflow: hidden;
+  width: 256px;
+  background: #f9fafe;
+  border-right: 1px solid #E0E2ED;
+  float: left;
+}
+.star-static-content-wrapper {
+  position: relative;
+  height: 100%;
+  margin-left: 256px;
+  padding-top: 38px;
+}
+.breadcrumb {
+  border-radius: 0;
+  padding: 10px 15px;
+  background: #F4F5F6;
+  margin: 0;
+  font-size: 12px;
+}
+.breadcrumb .active {
+  color: #0094ef;
+}
+.star-breadcrumb-row {
+  margin: 0;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid #E0E2ED;
+}
+.breadcrumb .glyph {
+  height: 14px;
+  width: 14px;
+  margin: -2px 0 0 0;
+  stroke-width: 4px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.glyph {
+  fill: currentColor;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 70%;
+  height: 70%;
+}
+.star-content-wrapper {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.star-content-block {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #f4f5f6;
+  padding: 0;
+  margin: 0;
+}
+.star-panel .panel-title,
+.star-panel .panel-body {
+  font-size: 16px;
+  font-family: "黑体";
+  color: #587aa6;
+}
+/*# sourceMappingURL=layout.css.map */

@@ -8,13 +8,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>首页</title>
+		<title>专利管理—统计查询—提案查询</title>
 
 		<!-- Bootstrap -->
-		<link href="<!-- @echo WEB_ROOT -->/css/bootstrap.min.css" rel="stylesheet">
+		<link href="<!-- @echo WEB_ROOT -->css/bootstrap.min.css" rel="stylesheet">
 		<!-- Font Awesome -->
-		<link href="<!-- @echo WEB_ROOT -->/css/font-awesome.min.css" rel="stylesheet">
-		<link href="<!-- @echo WEB_ROOT -->/css/index.css" rel="stylesheet">
+		<link href="<!-- @echo WEB_ROOT -->css/font-awesome.min.css" rel="stylesheet">
+		<link href="<!-- @echo WEB_ROOT -->css/index.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -26,25 +26,9 @@
 				<li class="star-navbar-toolbar-li active">
 					<a>
 						<span class="star-navbar-iconbg">
-                        <i class="glyphicon glyphicon-home"></i>
+                        <i class="iconfont icon-home"></i>
                     </span>
-						<span class="star-navbar-iconText">首页</span>
-					</a>
-				</li>
-				<li class="star-navbar-toolbar-li">
-					<a>
-						<span class="star-navbar-iconbg">
-                        <i class="glyphicon glyphicon-home"></i>
-                    </span>
-						<span class="star-navbar-iconText">创新提案</span>
-					</a>
-				</li>
-				<li class="star-navbar-toolbar-li">
-					<a>
-						<span class="star-navbar-iconbg">
-                        <i class="glyphicon glyphicon-home"></i>
-                    </span>
-						<span class="star-navbar-iconText">专利评审</span>
+						<span class="star-navbar-iconText">专利管理</span>
 					</a>
 				</li>
 				<li class="star-navbar-toolbar-li">
@@ -60,7 +44,7 @@
 						<span class="star-navbar-iconbg">
                         <i class="glyphicon glyphicon-home"></i>
                     </span>
-						<span class="star-navbar-iconText">品牌管理</span>
+						<span class="star-navbar-iconText">专利管理</span>
 					</a>
 				</li>
 				<li class="star-navbar-toolbar-li">
@@ -68,7 +52,23 @@
 						<span class="star-navbar-iconbg">
                         <i class="glyphicon glyphicon-home"></i>
                     </span>
-						<span class="star-navbar-iconText">系统管理</span>
+						<span class="star-navbar-iconText">专利管理</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </span>
+						<span class="star-navbar-iconText">专利管理</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
+                        <i class="glyphicon glyphicon-home"></i>
+                    </span>
+						<span class="star-navbar-iconText">专利管理</span>
 					</a>
 				</li>
 			</ul>
@@ -113,105 +113,101 @@
 		<div class="sub-wrapper">
 			<div class="star-layout-static">
 				<!-- 页面 右侧菜单布局-->
-				<div class="star-static-sidebar-wrapper" style="height: 100%;">
+				<div class="star-static-sidebar-wrapper">
 					<div class="star-sidebar-menu-wrapper">
-						<!--快键操作-->
-						<div class="quick-option"><span class="item-dot"></span>快键操作</div>
-						<ul class="quick-ul">
-							<li>
-								<a href="javascript:void(0);">
-									<div class="icon-box pink">
-										<i class="glyphicon glyphicon-home"></i>
-									</div>
-									<span class="item-title">新建提案</span>
+						<!-- 页面 右侧菜单 -->
+						<ul class="star-sidebar-menu">
+							<li class="hasChild open">
+								<a>
+									<i class="glyphicon glyphicon-home"></i>
+									<span>提案管理</span>
 								</a>
+								<ul class="star-sidebar-submenu">
+									<li class="active">
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+								</ul>
+							</li>
+							<li class="hasChild">
+								<a>
+									<i class="glyphicon glyphicon-home"></i>
+									<span>专利管理</span>
+								</a>
+								<ul class="star-sidebar-submenu">
+									<li>
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+								</ul>
+							</li>
 
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<div class="icon-box yellow">
-										<i class="glyphicon glyphicon-home"></i>
-									</div>
-									<span class="item-title">我的提案</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<div class="icon-box blue">
-										<i class="glyphicon glyphicon-home"></i>
-									</div>
-									<span class="item-title">我的提案</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<div class="icon-box green">
-										<i class="glyphicon glyphicon-home"></i>
-									</div>
-									<span class="item-title">我的提案</span>
-								</a>
-
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<div class="icon-box pink">
-										<i class="glyphicon glyphicon-home"></i>
-									</div>
-									<span class="item-title">我的提案</span>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">
-									<div class="icon-box blue">
-										<i class="glyphicon glyphicon-home"></i>
-									</div>
-									<span class="item-title">我的提案</span>
-								</a>
-							</li>
 						</ul>
-						<!--我的日程-->
-						<div class="my-calendar"><span class="item-dot"></span>我的日程</div>
-
+						<!-- 页面 右侧菜单 end-->
 					</div>
 				</div>
 				<!-- 页面 右侧菜单布局 end-->
 				<!-- 页面内容 -->
 				<div class="star-static-content-wrapper">
-					<div class="row">
-						<div class="col-md-6 col-sm-6">
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i>专利统计</h3>
-								</div>
-								<div class="panel-body">
-									
-								</div>
+					<div class="row star-breadcrumb-row">
+						<ol class="breadcrumb">
+							<li>专利管理</li>
+							<li>统计查询</li>
+							<li class="active">提案查询</li>
+						</ol>
+					</div>
+					<div class="star-content-wrapper" style="padding: 0;">
+						<div class="row" style="margin:10px 20px">
+							<div class="btn-group col-md-2 patent-btn-group" style="padding-right: 0;">
+								<button class="btn btn-default" type="button">设置列</button>
+								<button class="btn btn-default" type="button">列表导出</button>
+							</div>
+							<div class="btn-group col-md-10 patent-btn-group">
+								<button class="btn btn-default" type="button">
+                        		<span class="glyphicon glyphicon-cog" style="padding-right: 3px;"></span>管理
+                        	</button>
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6">
-                            <div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i>专利统计</h3>
-								</div>
-								<div class="panel-body">
-									
-								</div>
+
+						<div class="star-content-block">
+							<div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-10"></div>
 							</div>
 						</div>
+						<div class="panel panel-default star-panel" style="margin:16px">
+							<div class="panel-heading">
+								<h3 class="panel-title">查询结果</h3>
+							</div>
+							<div class="panel-body">
+								
+							</div>
+						</div>
+
 					</div>
 				</div>
 				<!-- 页面内容 end-->
 			</div>
 		</div>
 		<!-- 页面布局 end-->
-		<script src="<!-- @echo WEB_ROOT -->/js/vendors.js"></script>
+		<script src="<!-- @echo WEB_ROOT -->js/vendors.js"></script>
 		<!-- @if NODE_ENV!='production' -->
 		<!-- build:js /js/index.min.js -->
-		<script src="<!-- @echo WEB_ROOT -->/js/app.js"></script>
+		<script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
 		<!-- endbuild -->
 		<!--@endif-->
 		<!-- @if NODE_ENV=='production' -->
-		<script src="<!-- @echo WEB_ROOT -->/js/index.min.js"></script>
+		<script src="<!-- @echo WEB_ROOT -->js/index.min.js"></script>
 		<!--@endif-->
 		<script>
 			$(function() {
