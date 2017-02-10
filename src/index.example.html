@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 用来指定IE的兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!-- 版权信息 -->
+    <meta name="copyright" content="&copy;2016 "/>
+    <!-- 控制状态栏显示样式 -->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+
+    <!-- 设置移动端 标题-->
+    <meta name="apple-mobile-web-app-title" content="疯狂猜歌">
+    <meta content="width=device-width,maximum-scale=1.0" name="viewport"/>
+
+    <meta name="keywords"
+          content="疯狂猜歌"/>
+    <meta name="description"
+          content="疯狂猜歌"/>
+
+    <title>疯狂猜歌</title>
+    <link rel="stylesheet" href="<!-- @echo WEB_ROOT -->/css/index.css"/>
+    <script src="<!-- @echo WEB_ROOT -->/js/hotcss.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <section class="banner-wrapper">
+    </section>
+    <section class="rule-wrapper">
+        <div class="rule-title-wrapper">
+            <div class="rule-title">活动规则</div>
+        </div>
+        <div class="rule-menu-wrapper">
+            <div class="rule-menu-bg">
+                <h1 class="ribbon">
+                    <span class="title-type">类目</span>
+                    <span class="title-date">时间</span>
+                </h1>
+                <div class="rule-menu-item">
+                    <span class="type">中国风</span>
+                    <span class="date">6月6日-6月12日</span>
+                </div>
+                <div class="rule-menu-item">
+                    <span class="type">流行</span>
+                    <span class="date">6月13日-6月19日</span>
+                </div>
+                <div class="rule-menu-item">
+                    <span class="type">民谣</span>
+                    <span class="date">6月20日-6月26日</span>
+                </div>
+                <div class="rule-menu-item">
+                    <span class="type">R&B</span>
+                    <span class="date">6月27日-7月3日</span>
+                </div>
+            </div>
+        </div>
+        <ul class="rule-list">
+            <li>1.每周一个音乐主题，每个主题共有12名歌手36
+                首歌，进行随机听歌，限时猜歌名竞赛，每位
+                参与者会免费获赠2个“1元红包”
+            </li>
+            <li>2.前两周可使用免费红包参与，每周可以猜3轮共
+                9首歌。2个免费红包用完后，第三周第四周如
+                想继续猜，则每周从“我的红包链”中扣除1元红
+                包。
+            </li>
+            <li>3.免费的2个红包仅作为本游戏使用，如不用也不
+                计入红包链总金额。
+            </li>
+            <li>4.进入主题猜歌活动后，随机选择歌手，然后出现
+                歌手相应的三首节选歌曲。在规定时间内，勾选
+                你认为正确的歌名。时间一到，本轮答题结束。
+                我们将在月底对你的正确率进行累计。
+            </li>
+            <li>5.答对有奖：本月游戏结束后，答对20题以上者
+                获三等奖，答对28题以上者获二等奖，答对32
+                题以上者获全场大奖。
+            </li>
+
+        </ul>
+        <div class="tip">
+            *活动最终解释权由北京微联天下科技有限公司所有.
+        </div>
+    </section>
+    <footer class="footer">
+        <button>开始竞猜</button>
+    </footer>
+
+</div>
+<!-- 红包不足 -->
+<div class="dialog-bg" style="display: none;" id="noredpg">
+    <div class="dialog-wrapper">
+
+
+        <div class="dialog">
+            <div class="title"></div>
+            <div class="content">
+                红包余额不足，快去邀请_好友注册，明天继续竞猜！
+            </div>
+            <div class="btn-wrapper fn-clear">
+                <button class="fn-left" id="inviteBtn">立即邀请</button>
+                <button class="fn-right" id="quitGuessBtn">退出竞猜</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 红包充足 -->
+<div class="dialog-bg" style="display: none;" id="hasredpg">
+    <div class="dialog-wrapper">
+
+
+        <div class="dialog">
+            <div class="title"></div>
+            <div class="content">
+                本周竞猜将扣除红包链1元,如同意,请点击"立即参与"
+            </div>
+            <div class="btn-wrapper fn-clear">
+                <button class="fn-left" id="playerBtn">立即参与</button>
+                <button class="fn-right" id="noPlayerBtn">暂不参与</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="<!-- @echo WEB_ROOT -->/js/vendors.js"></script>
+<!-- @if NODE_ENV!='production' -->
+<!-- build:js /js/index.min.js -->
+<script src="<!-- @echo WEB_ROOT -->/js/apiConfig.js"></script>
+<script src="<!-- @echo WEB_ROOT -->/js/api.js"></script>
+<script src="<!-- @echo WEB_ROOT -->/js/common.js"></script>
+<script src="<!-- @echo WEB_ROOT -->/js/index.js"></script>
+<!-- endbuild -->
+<!--@endif-->
+<!-- @if NODE_ENV=='production' -->
+<script src="<!-- @echo WEB_ROOT -->/js/index.min.js"></script>
+<!--@endif-->
+<script>
+    $(function() {
+        App.init();
+    })
+</script>
+</body>
+</html>
