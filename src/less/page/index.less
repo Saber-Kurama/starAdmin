@@ -1,16 +1,18 @@
-.sub-wrapper .quick-option,.sub-wrapper .my-calendar{
-   width: 220px;
-   height: 40px;
-   margin-top: 10px;
-   background: #eef1fb;
-   border-top-right-radius: 20px;
-   border-bottom-right-radius: 20px;
-   font-size: 14px;
-   line-height: 40px;
-   font-family: "黑体";
-   padding-left: 30px;  
+.sub-wrapper .my-calendar,
+.sub-wrapper .quick-option {
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+    background: #eef1fb;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 14px;
+    line-height: 40px;
+    font-family: "黑体";
+    padding-left: 30px;
 }
-.quick-option .item-dot,.my-calendar .item-dot{
+.my-calendar .item-dot,
+.quick-option .item-dot {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -18,29 +20,28 @@
     background: #404852;
     margin-right: 10px;
 }
-.quick-ul{
+.quick-ul {
     position: relative;
-    padding: 0;
-    padding-top: 5px;
+    padding: 5px 0 0;
     height: 156px;
     width: 256px;
     list-style: none;
 }
 
-.pink{
+.pink {
     background: #ff6089;
 }
-.yellow{
-     background: #ffbd5a;
+.yellow {
+    background: #ffbd5a;
 }
-.blue{
+.blue {
     background: #5aceff;
 }
-.green{
+.green {
     background: #8ed47d;
 }
 
-.icon-box{
+.icon-box {
     width: 46px;
     height: 46px;
     line-height: 46px;
@@ -49,30 +50,64 @@
     color: #FFFFFF;
     font-size: 25px;
 }
-.icon-box i{
+.icon-box i {
     margin-left: -2px;
 }
 
-.quick-ul li{
+.quick-ul li {
     float: left;
     margin-left: 24px;
     margin-top: 15px;
     width: 50px;
 }
 
-.item-title{
+.item-title {
     font-size: 12px;
     color: #000;
     font-family: Arial;
 }
 
- .sub-wrapper .my-calendar{
+.sub-wrapper .my-calendar {
     margin-top: 30px;
 }
-.quick-ul a{
-   text-decoration: none;
+.quick-ul a {
+    text-decoration: none;
 }
-.quick-ul a:hover{
+.quick-ul a:hover {
     text-decoration: none;
 }
 
+.star-index-wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+.star-chart-panel .panel-title{
+    display: block;
+    float: left;
+}
+.star-chart-panel .panel-heading{
+    height: 45px;
+    line-height: 45px;
+    padding: 15px 20px 10px 20px;
+    color: #587AA6;
+    font-size: 12px;
+}
+.star-chart-panel .panel-body{
+    margin:20px;
+    margin-top: 0px;
+    padding: 10px 0;
+    border-top: 1px solid #a9adb1;
+}
+.star-chart-panel .panel-opt{
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+.star-chart-panel .panel-opt i{
+    font-size: 18px;
+    margin-left: 15px;  
+    cursor: pointer;
+}
