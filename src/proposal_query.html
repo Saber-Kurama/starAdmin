@@ -110,7 +110,7 @@
 			<!-- 头部右侧菜单 end-->
 		</div>
 		<!-- 页面布局 -->
-		<div class="sub-wrapper">
+		<div class="sub-wrapper" id="query-prop">
 			<div class="star-layout-static">
 				<!-- 页面 右侧菜单布局-->
 				<div class="star-static-sidebar-wrapper">
@@ -166,8 +166,8 @@
 							<li class="active">提案查询</li>
 						</ol>
 					</div>
-					<div class="star-content-wrapper" style="padding: 0;">
-						<div class="row" style="margin:10px 20px">
+					<div class="star-content-wrapper">
+						<div class="row">
 							<div class="btn-group col-md-2 patent-btn-group" style="padding-right: 0;">
 								<button class="btn btn-default" type="button">设置列</button>
 								<button class="btn btn-default" type="button">列表导出</button>
@@ -179,18 +179,52 @@
 							</div>
 						</div>
 
-						<div class="star-content-block">
+						<div class="idea-search-wrap">
 							<div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-10"></div>
+								<div class="col-md-8">
+
+									<div class="form-group col-md-6">
+										<label for="express-rel" class="col-md-5 control-label star-form-item-label">表达关系</label>
+										<div class="col-md-7 star-form-item-div">
+											<select class="form-control star-form-select">
+												<option>与</option>
+												<option>或</option>
+												<option>非</option>
+												<option>异或</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-md-6">
+										<a href="#" class="star-form-link">添加条件</a>
+										<a href="#" class="star-form-link">添加分组</a>
+									</div>
+								</div>
+
 							</div>
+							<div class="row">
+								<div class="form-group col-md-10">
+									<label for="express" class="col-md-2 control-label star-form-item-label">表达式</label>
+									<div class="col-md-6 star-form-item-div">
+										<input type="text" class="form-control" id="express" placeholder="">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-md-10">
+									<label for="express" class="col-md-2 control-label star-form-item-label"></label>
+									<div class="col-md-6 star-form-item-div">
+										<div class="btn star-btn-primary">查询</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
-						<div class="panel panel-default star-panel" style="margin:16px">
+						<div class="panel panel-default star-panel">
 							<div class="panel-heading">
 								<h3 class="panel-title">查询结果</h3>
 							</div>
 							<div class="panel-body">
-								
+								datatables
 							</div>
 						</div>
 

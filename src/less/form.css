@@ -1,0 +1,30 @@
+.form-control {
+  height: 26px;
+  background-color: #F4F5F6;
+  border-radius: 0;
+}
+.form-control-feedback {
+  height: 26px;
+  line-height: 26px;
+}
+.star-form-item-label {
+  padding: 0;
+  text-align: right;
+  color: #8294A9;
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: middle;
+  padding: 7px 0;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+.star-form-item-div {
+  padding: 0;
+}
+.star-form-item-div input {
+  background-color: #fff;
+}
+/*# sourceMappingURL=form.css.map */
