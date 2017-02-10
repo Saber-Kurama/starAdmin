@@ -164,7 +164,7 @@
                 </div>
                 <div class="star-content-wrapper">
                     <div class="row">
-                        <div class="btn-group col-md-12 patent-btn-group" style="padding:0">
+                        <div class="btn-group col-md-12 patent-btn-group">
                             <button class="btn btn-default" type="button">保存</button>
                             <button class="btn btn-default" type="button">新提案</button>
                             <button class="btn btn-default" type="button">申请专利</button>
@@ -172,51 +172,53 @@
                             <button class="btn btn-default" type="button">转为技术公开</button>
                         </div>
                     </div>
-                    <div class="patent-hr"></div>
-                    <div>
-
-                        <div class="star-tabs-content">
-
-                            <div class="col-xs-3" style="padding:0;">
-                                <!-- required for floating -->
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs tabs-left">
-                                    <li class=""><a href="#home" data-toggle="tab" aria-expanded="false">提案概况</a>
-                                    </li>
-                                    <li class=""><a href="#profile" data-toggle="tab" aria-expanded="false">项目查询</a>
-                                    </li>
-                                    <li class=""><a href="#messages" data-toggle="tab" aria-expanded="false">技术相关</a>
-                                    </li>
-                                    <li class="active"><a href="#settings" data-toggle="tab" aria-expanded="true">提案人</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-xs-9" style="padding:0">
-                                <!-- Tab panes -->
-                                <div class="tab-content" style=" min-height: 200px;margin-left:-2px;">
-                                    <div class="tab-pane" id="home">
-                                        <p class="lead">Home tab</p>
-                                        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown
-                                            aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles
-                                            vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby
-                                            sweater eu banh mi, qui irure terr.</p>
+                    <div class="idea-search-wrap">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group star-row ">
+                                    <label for="inputEmail3" class="col-md-3 control-label star-form-item-label">提案编号</label>
+                                    <div class="col-md-9 star-form-item-div">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
                                     </div>
-                                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                                    <div class="tab-pane active" id="settings">Settings Tab.</div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-md-3 control-label star-form-item-label">提案名称</label>
+                                    <div class="col-sm-9 star-form-item-div">
+                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group star-row">
+                                    <div class="col-md-offset-3 col-md-9 star-form-item-div">
+                                        <button>查询</button>
+                                        <button>查询</button>
+                                        <button>查询</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
 
-                            <div class="clearfix"></div>
-
+                        <div class="panel panel-default">
+                            <div class="panel-heading">当前过滤条件为【所有数据】</div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
-            <!-- 页面内容 end-->
         </div>
+        <!-- 页面内容 end-->
+    </div>
     </div>
     <!-- 页面布局 end-->
     <script src="<!-- @echo WEB_ROOT -->js/vendors.js"></script>
