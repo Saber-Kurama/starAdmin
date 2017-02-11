@@ -12,7 +12,7 @@
     background-color: #E6EDF4;
     border-color: #D3D7E5;
 }
-.btn-default.focus, .btn-default:focus {
+.btn-default.focus, .btn-default:focus, .btn-default:active,.btn-default:active:focus {
     // color: #333;
     background-color: #E6EDF4;
     border-color: #D3D7E5;
@@ -27,7 +27,7 @@
     background-color: #3B8EDE;
     border-color: #3B8EDE;
 }
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary:active,.btn-primary:active:focus  {
     // color: #333;
     background-color: #3B8EDE;
     border-color: #3B8EDE;
@@ -35,7 +35,14 @@
 
 
 
-
+.btn-group>.btn{
+    height: 22px;
+    // line-height: 22px;
+    padding: 1px 12px;
+    &.btn-duli{
+        margin-left: 10px;
+    }
+}
 
 .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){
     border-radius:0;
@@ -44,4 +51,5 @@
 .btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child){
     border-radius:0;
 }
+
 
