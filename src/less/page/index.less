@@ -6,7 +6,7 @@
     background: #eef1fb;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 40px;
     font-family: "黑体";
     padding-left: 30px;
@@ -26,6 +26,7 @@
     height: 156px;
     width: 256px;
     list-style: none;
+    margin-bottom: 40px;
 }
 
 .pink {
@@ -49,6 +50,7 @@
     border-radius: 100%;
     color: #FFFFFF;
     font-size: 25px;
+    margin-bottom: 10px;
 }
 .icon-box i {
     margin-left: -2px;
@@ -63,8 +65,9 @@
 
 .item-title {
     font-size: 12px;
-    color: #000;
+    color: #404852;
     font-family: Arial;
+    
 }
 
 .sub-wrapper .my-calendar {
@@ -83,6 +86,9 @@
     overflow-y: auto;
     padding: 10px 20px;
 }
+.panel.star-chart-panel{
+    border: 1px solid #D3D7E5;
+}
 .star-chart-panel .panel-title{
     display: block;
     float: left;
@@ -91,8 +97,33 @@
     height: 45px;
     line-height: 45px;
     padding: 15px 20px 10px 20px;
-    color: #587AA6;
+    // color: #587AA6;
+    color: #404852;
     font-size: 12px;
+    font-weight: 400;
+    h3{
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+        > i{
+            font-size: 16px;
+            margin-right: 8px;
+            color: #218AD7;
+        }
+    }
+    .panel-sub-title{
+        display: inline-block;
+        float: left;
+        line-height: 18px;
+        margin-left: 16px;
+        span{
+            margin-right: 8px;
+            cursor: pointer;
+            &.active{
+                color: #00A0F7;
+            }
+        }
+    }
 }
 .star-chart-panel .panel-body{
     margin:20px;
@@ -110,4 +141,75 @@
     font-size: 18px;
     margin-left: 15px;  
     cursor: pointer;
+}
+
+.daiban-header{
+    text-align: center;
+    background-color: #A1D2F5;
+    height: 27px;
+    line-height: 27px;
+}
+.daiban-item{
+    height: 27px;
+    line-height: 27px;
+    > div{
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+}
+
+.index-item-dot{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #696969;
+    margin-right: 6px;
+    &.red{
+        background: #FF4E00;
+    }
+}
+
+.zixun{
+    .zixun-item1{
+        height: 86px;
+        padding-left: 136px;
+        position: relative;
+        overflow:hidden;
+        .zixun-item1-img{
+            width: 128px;
+            height: 86px;
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+        margin-bottom: 10px;
+    }
+    .zixun-item1-desc{
+        .title{
+            color: #404852;
+            font-size: 14px;
+            margin-bottom: 15px;
+            white-space:nowrap;
+            overflow:hidden;
+        text-overflow:ellipsis;
+        }
+        .desc{
+            color: #404852;
+            font-size: 12px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+    }
+    .zixun-item{
+        height: 27px;
+        line-height: 27px;
+        > div{
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+    }
+
 }
