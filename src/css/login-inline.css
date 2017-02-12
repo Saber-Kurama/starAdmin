@@ -230,7 +230,7 @@ input:-webkit-autofill:active {
 }
 
 .info-ul li{
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 
@@ -254,7 +254,7 @@ input:-webkit-autofill:active {
     content: '.';
     color: #696969;
     font-size: 52px;
-    margin-top: -33px;
+   margin-top: -38px;
 }
 
 .info-ul .active-li a{
