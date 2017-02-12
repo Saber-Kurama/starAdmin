@@ -15,11 +15,12 @@ module.exports = {
     css:{
       src: ['bower_components/bootstrap/dist/css/bootstrap.min.css',
             'bower_components/font-awesome/css/font-awesome.min.css',
-      'src/css/*'],
+      'src/css/*','src/lib/daterangepicker/daterangepicker-bs3.css',
+      'bower_components/jstree/dist/themes/default/*'],
       dest: 'dist/css',
     },
     js:{
-      src:['src/lib/hotcss.js'],
+      src:['src/lib/daterangepicker/daterangepicker.js'],
       dest:'dist/js'
     },
     fonts:{
@@ -56,7 +57,10 @@ module.exports = {
     'src': [
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/bootstrap/dist/js/bootstrap.min.js',
-      'bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.js'
+      'bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.js',
+      'bower_components/moment/min/moment.min.js',
+      'bower_components/jstree/dist/jstree.min.js',
+      'src/lib/daterangepicker/daterangepicker.js'
     ],
     'dest': 'dist/js'
   },
