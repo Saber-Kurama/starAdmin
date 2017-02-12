@@ -154,55 +154,64 @@
                     <ol class="breadcrumb">
                         <li><i class="fa fa-map-marker"></i>专利管理</li>
                         <li>统计分析</li>
-                        <li class="active">提案查询</li>
+                        <li class="active">汇总统计</li>
                     </ol>
                 </div>
                 <div class="star-content-wrapper">
                     <div class="row">
                         <div class="btn-group col-md-12 patent-btn-group">
-                            <button class="btn btn-default" type="button">设置列</button>
-                            <button class="btn btn-default" type="button">列表导出</button>
-                            <button class="btn btn-default btn-duli" type="button"><i class="fa fa-cog" style="margin-right:4px;"></i>管理</button>
+                            <button class="btn btn-default btn-duli" type="button">
+                                <i class="fa fa-cog" style="margin-right:4px;"></i>发布给领导
+                            </button>
                         </div>
                     </div>
-                    <div class="idea-search-wrap">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group star-row ">
-                                    <label for="inputEmail3" class="col-md-2 control-label star-form-item-label">提案编号</label>
-                                    <div class="col-md-9 star-form-item-div">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group star-row ">
-                                    <label for="inputEmail3" class="col-md-2 control-label star-form-item-label">提案编号</label>
-                                    <div class="col-md-9 star-form-item-div">
-                                        <input type="text" class="form-control" id="inputEmail3" placeholder="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group star-row">
-                                    <div class="col-md-offset-2 col-md-9 star-form-item-div">
-                                        <button class="btn btn-primary">查询</button>
-                                        <button class="btn btn-primary">重置</button>
-                                        <button class="btn btn-primary">更多</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="patent-hr"></div>
                     <div>
+                        <div class="row">
+                            <div class="col-md-4">
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">查询结果</div>
-                            <div class="panel-body">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">查询结果</div>
+                                    <div class="panel-body">
+                                        <div id=tree></div>
+                                    </div>
+                                </div>
 
-                                <div>
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <div class="summary-search-wrap">
+                                    <form class="form-inline">
+                                        <div class="form-group star-form-item-div">
+                                            <label for="exampleInputName2">提案日期</label>
+                                            <input type="text" class="form-control" id="exampleInputName2" >
+                                        </div>
+                                        <div class="form-group star-form-item-div">
+                                            <label for="exampleInputEmail2">组织机构</label>
+                                            <input type="text" class="form-control" id="exampleInputEmail2" >
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">统计</button>
+                                    </form>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" style="height:42px;padding-left: 0px;">
+                                        <div class="btn-group col-md-12 patent-btn-group">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-cog" style="margin-right:4px;"></i>发布给领导
+                                            </button>
+                                            <button class="btn btn-default" type="button">
+                                                <i class="fa fa-cog" style="margin-right:4px;"></i>发布给领导
+                                            </button>
+                                        </div>
+                                        </div>
+                                    <div class="panel-body">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="">
                                     <table class="table table-striped table-bordered jambo_table bulk_action">
                                         <thead>
                                             <tr class="headings">
@@ -246,42 +255,12 @@
 
                                         </tbody>
                                     </table>
-
-                                </div>
-
-                                <div class="idea-pag-wrap">
-                                    <div aria-label="Page navigation" class="idea-pag-wrap1">
-                                        <ul class="star-pagination ">
-
-                                            <li class="star-pagination-item star-pagination-item-1 star-pagination-item-active">
-                                                <a href="#">1</a>
-                                            </li>
-                                            <li class="star-pagination-item">
-                                                <a href="#">2</a>
-                                            </li>
-                                            <li class="star-pagination-item">
-                                                <a href="#">3</a>
-                                            </li>
-                                            <li class="star-pagination-item">
-                                                <a href="#">4</a>
-                                            </li>
-                                            <li class="star-pagination-item">
-                                                <a href="#">5</a>
-                                            </li>
-                                            <div class="star-pagination-options">
-                                                <div class="star-pagination-options-quick-jumper">
-                                                    跳转到<input type="text" value="2">
-                                                </div>
-                                                <div class="star-pagination-options-quick-jumper">
-                                                    每页<input type="text" value="2">
-                                                </div>
-                                            </div>
-                                        </ul>
-                                    </div>
-                                </div>
-
+                                </div>        
                             </div>
                         </div>
+
+
+
                         <!-- 页面内容 end-->
                     </div>
                 </div>
@@ -290,6 +269,7 @@
                 <!-- @if NODE_ENV!='production' -->
                 <!-- build:js /js/index.min.js -->
                 <script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
+                <script src="<!-- @echo WEB_ROOT -->js/summary.js"></script>
                 <!-- endbuild -->
                 <!--@endif-->
                 <!-- @if NODE_ENV=='production' -->
@@ -298,6 +278,7 @@
                 <script>
     $(function() {
         App.init();
+        Summary.init();
     })
 </script>
 </body>

@@ -55,7 +55,8 @@ module.exports = {
     'dist':'vendors.js',
     'src': [
       'bower_components/jquery/dist/jquery.min.js',
-      'bower_components/bootstrap/dist/js/bootstrap.min.js'
+      'bower_components/bootstrap/dist/js/bootstrap.min.js',
+      'bower_components/bootstrap-treeview/dist/bootstrap-treeview.min.js'
     ],
     'dest': 'dist/js'
   },

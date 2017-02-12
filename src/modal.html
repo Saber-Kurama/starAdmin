@@ -282,22 +282,47 @@
 
                             </div>
                         </div>
-                        <!-- 页面内容 end-->
+
                     </div>
                 </div>
-                <!-- 页面布局 end-->
-                <script src="<!-- @echo WEB_ROOT -->js/vendors.js"></script>
-                <!-- @if NODE_ENV!='production' -->
-                <!-- build:js /js/index.min.js -->
-                <script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
-                <!-- endbuild -->
-                <!--@endif-->
-                <!-- @if NODE_ENV=='production' -->
-                <script src="<!-- @echo WEB_ROOT -->js/index.min.js"></script>
-                <!--@endif-->
-                <script>
+
+            </div>
+            <!-- 页面内容 end-->
+        </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">自定义方案</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">上一步</button>
+        <button type="button" class="btn btn-primary">下一步</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="<!-- @echo WEB_ROOT -->js/vendors.js"></script>
+    <!-- @if NODE_ENV!='production' -->
+    <!-- build:js /js/index.min.js -->
+    <script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
+    <!-- endbuild -->
+    <!--@endif-->
+    <!-- @if NODE_ENV=='production' -->
+    <script src="<!-- @echo WEB_ROOT -->js/index.min.js"></script>
+    <!--@endif-->
+    <script>
     $(function() {
         App.init();
+        $('#myModal').modal('show')
     })
 </script>
 </body>
