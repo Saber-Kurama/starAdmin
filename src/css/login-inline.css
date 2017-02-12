@@ -1,11 +1,15 @@
 * {
 	box-sizing: border-box;
 }
-
+html,body{
+	width: 100%;
+	height: 100%;
+}
 body {
 	width: 100%;
 	height: 100%;
-	background: url(../images/inline_login_bg.jpg) top center no-repeat;
+	background: url(../images/inline_login_bg.jpg) center no-repeat;
+	background-size: cover;
 	overflow: hidden;
 }
 
@@ -18,11 +22,12 @@ input:-webkit-autofill:active {
 
 #login {
 	position: absolute;
-	top: 30%;
+	top: 50%;
 	left: 50%;
 	width: 326px;
 	height: 358px;
 	margin-left: -163px;
+	margin-top: -229px;
 	background: #eeeeee;
 	border-radius: 10px;
 	border: 1px #7c868d;
@@ -36,6 +41,7 @@ input:-webkit-autofill:active {
 	background: url(../images/inline-logo.png) top center no-repeat;
 	margin: 0 auto;
 	margin-top: 20px;
+	background-size: contain;
 }
 
 .form-group {
@@ -84,18 +90,31 @@ input:-webkit-autofill:active {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-	margin-left: 14px;
+	/*margin-left: 14px;
 	margin-top: 10px;
-	background: url(../images/inline_user_icon.png) top center no-repeat;
+	background: url(../images/inline_user_icon.png) top center no-repeat;*/
+	height: 46px;
+	text-align: center;
+	padding-top: 11px;
+    padding-left: 10px;
 }
 
 .password-icon {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
-	margin-left: 14px;
+	/*margin-left: 14px;
 	margin-top: 10px;
-	background: url(../images/inline_pwd_icon.png) top center no-repeat;
+	background: url(../images/inline_pwd_icon.png) top center no-repeat;*/
+	height: 46px;
+	text-align: center;
+	padding-top: 11px;
+    padding-left: 10px;
+}
+.user-icon i,.password-icon i{
+	font-size: 26px;
+	color: #2aace1;
+	
 }
 
 .login-footer {
@@ -133,11 +152,26 @@ input:-webkit-autofill:active {
 	display: block;
 }
 
+.popover-news{
+	position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 100px;
+    bottom: 30px;
+    /*background-color: red;*/
+}
+
+.popover-news:hover{
+	width: 379px;
+    height: 258px;
+	right: 50px;
+}
+
 .info-list{
 	display: none;
-	position: absolute;
-    bottom: 85px;
-    right: 50px;
+	/*position: absolute;*/
+    /*bottom: 85px;*/
+    /*right: 50px;*/
     width: 379px;
     height: 203px;	
 }
@@ -147,7 +181,7 @@ input:-webkit-autofill:active {
 	width: 379px;
 	height: 30px;
 	background: rgba(255,255,255,.8);
-	border: 2px solid #478ead;
+	border: 1px solid #478ead;
 	border-bottom: none;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;	
@@ -181,7 +215,7 @@ input:-webkit-autofill:active {
 	width: 379px;
 	height: 173px;
 	background: rgba(255,255,255,.75);	
-	border: 2px solid #478ead;
+	border: 1px solid #478ead; /*#4a8f*/
 	border-top: none;	
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -265,3 +299,23 @@ input:-webkit-autofill:active {
     right: 61px;
     opacity: .9;
 }
+
+@font-face {font-family: "iconfont1";
+  src: url('../fonts/iconfont1.eot?t=1486831397106'); /* IE9*/
+  src: url('../fonts/iconfont1.eot?t=1486831397106#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont1.woff?t=1486831397106') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont1.ttf?t=1486831397106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont1.svg?t=1486831397106#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont1 {
+  font-family:"iconfont1" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-code:before { content: "\e612"; }
+
+.icon-user:before { content: "\e613"; }
