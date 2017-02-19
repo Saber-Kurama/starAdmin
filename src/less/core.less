@@ -62,7 +62,23 @@ a {
   }
 }
 
+button{
+   &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 
+  &:active {
+    color: inherit;
+    text-decoration: none;    
+  }
+
+  &:active,
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+}
 ul, ol {
     list-style: none;
 }

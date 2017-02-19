@@ -31,46 +31,6 @@
 					<span class="star-navbar-iconText">首页</span>
 				</a>
 			</li>
-			<li class="star-navbar-toolbar-li">
-				<a>
-					<span class="star-navbar-iconbg">
-                        <i class="iconfont icon-chuangyitian"></i>
-                    </span>
-					<span class="star-navbar-iconText">创新提案</span>
-				</a>
-			</li>
-			<li class="star-navbar-toolbar-li">
-				<a>
-					<span class="star-navbar-iconbg">
-                        <i class="iconfont icon-zhuanlipingshen"></i>
-                    </span>
-					<span class="star-navbar-iconText">专利评审</span>
-				</a>
-			</li>
-			<li class="star-navbar-toolbar-li">
-				<a>
-					<span class="star-navbar-iconbg">
-                        <i class="iconfont icon-pinpaiguanli"></i>
-                    </span>
-					<span class="star-navbar-iconText">品牌管理</span>
-				</a>
-			</li>
-			<li class="star-navbar-toolbar-li">
-				<a>
-					<span class="star-navbar-iconbg">
-                        <i class="iconfont icon-xitongguanli"></i>
-                    </span>
-					<span class="star-navbar-iconText">系统管理</span>
-				</a>
-			</li>
-			<li class="star-navbar-toolbar-li">
-				<a>
-					<span class="star-navbar-iconbg">
-                        <i class="iconfont icon-zhuanliguanli"></i>
-                    </span>
-					<span class="star-navbar-iconText">专利管理</span>
-				</a>
-			</li>
 		</ul>
 		<!-- 头部中间菜单 end-->
 		<!-- 头部右侧菜单 -->
@@ -202,6 +162,7 @@
 	<!-- @if NODE_ENV!='production' -->
 	<!-- build:js /js/index.min.js -->
 	<script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
+	<script src="<!-- @echo WEB_ROOT -->js/index.js"></script>
 	<!-- endbuild -->
 	<!--@endif-->
 	<!-- @if NODE_ENV=='production' -->
@@ -210,6 +171,7 @@
 	<script>
 			$(function() {
 				App.init();
+				Index.init();
 			})
 		</script>
 </body>

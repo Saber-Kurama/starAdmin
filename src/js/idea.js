@@ -3,6 +3,7 @@ var Idea = {
         this.setUIEvent();
     },
     setUIEvent: function(){
+        $('[data-toggle="tooltip"]').tooltip();
         // table 的展示
         $('.idea-table-label-js').on('click', function(){
             if($(this).parent().hasClass('open')){

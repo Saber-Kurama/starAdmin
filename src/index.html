@@ -264,6 +264,7 @@
 	<!-- @if NODE_ENV!='production' -->
 	<!-- build:js /js/index.min.js -->
 	<script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
+	<script src="<!-- @echo WEB_ROOT -->js/index.js"></script>
 	<!-- endbuild -->
 	<!--@endif-->
 	<!-- @if NODE_ENV=='production' -->
@@ -272,6 +273,7 @@
 	<script>
 			$(function() {
 				App.init();
+				Index.init();
 			})
 		</script>
 </body>
