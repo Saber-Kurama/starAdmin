@@ -25,7 +25,7 @@ input:-webkit-autofill:active {
 	top: 50%;
 	left: 50%;
 	width: 326px;
-	height: 358px;
+	height: 410px;
 	margin-left: -163px;
 	margin-top: -229px;
 	background: #eeeeee;
@@ -66,7 +66,7 @@ input:-webkit-autofill:active {
 	outline: none;
 	border: none;
 	font-size: 18px;
-	font-family: Arial;
+	font-family: "黑体";
 	color: #5e5e5e;
 }
 
@@ -121,7 +121,7 @@ input:-webkit-autofill:active {
 	display: block;
 	position: absolute;
 	bottom: 40px;
-	left: 50%;
+	left: 50.5%;
 	margin: 0 auto;
 	margin-left: -177px;
 	font-size: 12px;
@@ -131,6 +131,47 @@ input:-webkit-autofill:active {
 
 .login-footer span {
 	font-family: "黑体";
+}
+
+.vertcode{
+	position: relative;
+}
+
+.vert-code{
+	display: inline-block;
+	width: 120px;
+    float: right;
+    height: 46px;
+    margin-right: 6px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family:"黑体";
+    color: #5e5e5e;
+    background: #fff;
+}
+
+.vert-group{
+	position: relative;
+	float: left;
+	width: 178px;
+	height: 50px;
+	border-radius: 4px;
+	margin: 0 auto;
+	border: 1px solid #b5babd;
+	background: #fff;
+	margin-top: 12px;
+	margin-left: 16px;
+    box-sizing: border-box;
+}
+
+.vert-img{
+	width: 105px;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: 11px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .ex-info {
