@@ -8,7 +8,7 @@ html,body{
 body {
 	width: 100%;
 	height: 100%;
-	background: url(../images/inline_login_bg.jpg) center no-repeat;
+	background: url(../images/login_inline_bg.jpg) center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -114,7 +114,6 @@ input:-webkit-autofill:active {
 .user-icon i,.password-icon i{
 	font-size: 26px;
 	color: #2aace1;
-	
 }
 
 .login-footer {
@@ -143,6 +142,7 @@ input:-webkit-autofill:active {
     float: right;
     height: 46px;
     margin-right: 6px;
+    margin-top: 2px;
     outline: none;
     border: none;
     font-size: 18px;
@@ -178,15 +178,15 @@ input:-webkit-autofill:active {
 	position: fixed;
 	width: 40px;
 	height: 40px;
-	background: url(../images/ex_info.png) top center no-repeat;
+	background: url(../images/notices.png) top center no-repeat;
 	bottom: 30px;
-	right: 100px;
+	right: 80px;
 	opacity: 0.7;
 	cursor: pointer;
 }
 
 .popover-news:hover .ex-info {
-	background: url(../images/ex_info_active.png) top center no-repeat;
+	background: url(../images/notices.png) top center no-repeat;
 	opacity: 1;
 }
 .popover-news:hover .info-list{
@@ -205,7 +205,7 @@ input:-webkit-autofill:active {
 .popover-news:hover{
 	width: 379px;
     height: 258px;
-	right: 50px;
+	right: 30px;
 }
 
 .info-list{

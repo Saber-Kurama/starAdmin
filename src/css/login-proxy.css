@@ -1,74 +1,87 @@
-*{
+* {
 	box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
-body{
+
+body {
 	width: 100%;
 	height: 100%;
-	background: url(../images/login_proxy_bg.jpg) center no-repeat;
-	background-size: cover;
+	background-color: #39a5dd;
+	/* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(top, #3aa5dd, #2763ac);
+	/* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+	background-image: -moz-linear-gradient(top, #3aa5dd, #2763ac);
+	/* For Firefox (3.6 to 15) */
+	background-image: -o-linear-gradient(top, #3aa5dd, #2763ac);
+	/* For old Opera (11.1 to 12.0) */
+	background-image: linear-gradient(to bottom, #3aa5dd, #2763ac);
+	/* Standard syntax; must be last */
 	overflow: hidden;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-	-webkit-box-shadow: 0 0 0px 1000px white inset !important;
+	-webkit-box-shadow: 0 0 0px 1000px #f2f7f8 inset !important;
 }
 
-#login{
-   position: absolute;
-   /*top: 30%;*/
-   margin-top: -204px;
-    top: 50%;
-   left: 50%;
-   width: 702px;
-   height: 308px;
-   margin-left: -355px;
-   background: #ffffff;
-   border-radius: 10px;
-   border: 1px #aaa7b0;	
-   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.55);
-   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.55);
+#login {
+	position: absolute;
+	/*top: 30%;*/
+	margin-top: -204px;
+	top: 50%;
+	left: 50%;
+	width: 702px;
+	height: 308px;
+	margin-left: -355px;
+	background: #ffffff;
+	border-radius: 10px;
+	border: 1px #aaa7b0;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.55);
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.55);
 }
 
-.login-header{
+.login-header {
 	position: relative;
 	float: left;
 	width: 373px;
 	height: 308px;
 	border-right: 1px solid #aaa7b0;
 }
-.logo-proxy{
-	width: 327px;
+
+.logo-proxy {
+	width: 242px;
 	height: 49px;
-	background: url(../images/logo-proxy.png) top center no-repeat;
+	background: url(../images/logo_proxy.png) top center no-repeat;
 	margin-top: 20px;
-	margin-left: 25px;
+	margin-left: 40px;
 	z-index: 10;
 	background-size: contain;
 }
 
-.logo-bg{
+.logo-bg {
 	position: absolute;
-	top: 40px;
+	top: 54px;
 	left: 0;
 	width: 372px;
-	height: 268px;
+	height: 254px;
 	background: url(../images/proxy_bg.png) top center no-repeat;
 	z-index: 5;
 }
 
-.right-box{
+.right-box {
 	float: right;
 	width: 329px;
-	height: 308px;	
+	height: 308px;
 }
 
-.user-group{
+.user-group {
 	position: relative;
 	width: 294px;
 	height: 50px;
@@ -77,10 +90,10 @@ input:-webkit-autofill:active {
 	/*border: 1px solid #b5babd;*/
 	background: #f2f7f8;
 	margin-top: 43px;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.password-group{
+.password-group {
 	position: relative;
 	width: 294px;
 	height: 50px;
@@ -89,10 +102,10 @@ input:-webkit-autofill:active {
 	/*border: 1px solid #b5babd;*/
 	background: #f2f7f8;
 	margin-top: 12px;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.vert-group{
+.vert-group {
 	position: relative;
 	float: left;
 	width: 178px;
@@ -103,58 +116,59 @@ input:-webkit-autofill:active {
 	background: #f2f7f8;
 	margin-top: 12px;
 	margin-left: 19px;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.username, .password{
+.username,
+.password {
 	display: inline-block;
-    width: 236px;
-    float: right;
-    height: 46px;
-    margin-right: 2px;
-    outline: none;
-    border: none;
-    font-size: 14px;
-    font-family:"黑体";
-    color: #9da8ab;
-    background: #f2f7f8;
+	width: 236px;
+	float: right;
+	height: 46px;
+	margin-right: 2px;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	font-family: "黑体";
+	color: #9da8ab;
+	background: #f2f7f8;
 }
 
-.vertcode{
+.vertcode {
 	position: relative;
 }
 
-.vert-code{
+.vert-code {
 	display: inline-block;
 	width: 120px;
-    float: right;
-    height: 46px;
-    margin-right: 2px;
-    outline: none;
-    border: none;
-    font-size: 14px;
-    font-family:"黑体";
-    color: #9da8ab;
-    background: #f2f7f8;
+	float: right;
+	height: 46px;
+	margin-right: 2px;
+	outline: none;
+	border: none;
+	font-size: 14px;
+	font-family: "黑体";
+	color: #9da8ab;
+	background: #f2f7f8;
 }
 
-.vert-img{
+.vert-img {
 	width: 105px;
-    height: 50px;
-    margin-top: 12px;
-    margin-left: 10px;
-    border-radius: 4px;
-    cursor: pointer;
+	height: 50px;
+	margin-top: 12px;
+	margin-left: 10px;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
-.login-btn{
+.login-btn {
 	width: 294px;
 	height: 50px;
 	background: #2eabff;
 	margin: 0 auto;
 	margin-left: 16px;
 	font-family: "黑体";
-	font-size: 18px;	
+	font-size: 18px;
 	margin-top: 12px;
 	margin-left: 19px;
 	color: #FFFFFF;
@@ -164,36 +178,37 @@ input:-webkit-autofill:active {
 	cursor: pointer;
 }
 
-.user-icon{
+.user-icon {
 	display: inline-block;
 	width: 25px;
 	height: 46px;
 	text-align: center;
 	padding-top: 11px;
-    padding-left: 10px;
+	padding-left: 10px;
 	/*margin-left: 14px;
 	margin-top: 10px;*/
 	/*background: url(../images/inline_user_icon.png) top center no-repeat;*/
 }
 
-.password-icon{
+.password-icon {
 	display: inline-block;
 	width: 25px;
 	height: 46px;
 	text-align: center;
 	padding-top: 11px;
-    padding-left: 10px;
+	padding-left: 10px;
 	/*margin-left: 14px;
 	margin-top: 10px;*/
 	/*background: url(../images/inline_pwd_icon.png) top center no-repeat;*/
 }
-.user-icon i,.password-icon i{
+
+.user-icon i,
+.password-icon i {
 	font-size: 26px;
 	color: #2aace1;
-	
 }
 
-.login-footer{
+.login-footer {
 	display: block;
 	position: absolute;
 	bottom: 40px;
@@ -205,26 +220,33 @@ input:-webkit-autofill:active {
 	color: #FFFFFF;
 }
 
-.login-footer span{
+.login-footer span {
 	font-family: "黑体";
 }
 
-@font-face {font-family: "iconfont1";
-  src: url('../fonts/iconfont1.eot?t=1486831397106'); /* IE9*/
-  src: url('../fonts/iconfont1.eot?t=1486831397106#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/iconfont1.woff?t=1486831397106') format('woff'), /* chrome, firefox */
-  url('../fonts/iconfont1.ttf?t=1486831397106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/iconfont1.svg?t=1486831397106#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {
+	font-family: "iconfont1";
+	src: url('../fonts/iconfont1.eot?t=1486831397106');
+	/* IE9*/
+	src: url('../fonts/iconfont1.eot?t=1486831397106#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/iconfont1.woff?t=1486831397106') format('woff'), /* chrome, firefox */
+	url('../fonts/iconfont1.ttf?t=1486831397106') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+	url('../fonts/iconfont1.svg?t=1486831397106#iconfont') format('svg');
+	/* iOS 4.1- */
 }
 
 .iconfont1 {
-  font-family:"iconfont1" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: "iconfont1" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-code:before { content: "\e612"; }
+.icon-code:before {
+	content: "\e612";
+}
 
-.icon-user:before { content: "\e613"; }
+.icon-user:before {
+	content: "\e613";
+}
