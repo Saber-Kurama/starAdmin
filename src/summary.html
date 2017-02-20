@@ -1,291 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>提案查询</title>
+		<title>提案查询</title>
 
-    <!-- Bootstrap -->
-    <link href="<!-- @echo WEB_ROOT -->css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<!-- @echo WEB_ROOT -->css/font-awesome.min.css" rel="stylesheet">
-    <!-- jstree -->
-    <link rel="stylesheet" href="<!-- @echo WEB_ROOT -->css/style.min.css">
-    <!-- daterangepicker -->
-    <link rel="stylesheet" href="<!-- @echo WEB_ROOT -->css/daterangepicker-bs3.css">
+		<!-- Bootstrap -->
+		<link href="<!-- @echo WEB_ROOT -->css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="<!-- @echo WEB_ROOT -->css/font-awesome.min.css" rel="stylesheet">
+		<!-- jstree -->
+		<link rel="stylesheet" href="<!-- @echo WEB_ROOT -->css/style.min.css">
+		<!-- bootstrap-datetimepicker -->
+		<link rel="stylesheet" href="<!-- @echo WEB_ROOT -->css/bootstrap-datetimepicker.min.css">
 
-    <link href="<!-- @echo WEB_ROOT -->css/index.css" rel="stylesheet">
-</head>
+		<link href="<!-- @echo WEB_ROOT -->css/index.css" rel="stylesheet">
+	</head>
 
-<body>
-    <div class="navbar star-navbar">
-        <!-- logo -->
-        <div class="star-logo-area"></div>
-        <!-- 头部中间菜单-->
-        <ul class="nav navbar-nav toolbar star-navbar-toolbar-ul">
-            <li class="star-navbar-toolbar-li active">
-                <a>
-                    <span class="star-navbar-iconbg">
+	<body>
+		<div class="navbar star-navbar">
+			<!-- logo -->
+			<div class="star-logo-area"></div>
+			<!-- 头部中间菜单-->
+			<ul class="nav navbar-nav toolbar star-navbar-toolbar-ul">
+				<li class="star-navbar-toolbar-li active">
+					<a>
+						<span class="star-navbar-iconbg">
                         <i class="iconfont icon-home"></i>
                     </span>
-                    <span class="star-navbar-iconText">首页</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
+						<span class="star-navbar-iconText">首页</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
                         <i class="iconfont icon-chuangyitian"></i>
                     </span>
-                    <span class="star-navbar-iconText">创新提案</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
+						<span class="star-navbar-iconText">创新提案</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
                         <i class="iconfont icon-zhuanlipingshen"></i>
                     </span>
-                    <span class="star-navbar-iconText">专利评审</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
+						<span class="star-navbar-iconText">专利评审</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
                         <i class="iconfont icon-pinpaiguanli"></i>
                     </span>
-                    <span class="star-navbar-iconText">品牌管理</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
+						<span class="star-navbar-iconText">品牌管理</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
                         <i class="iconfont icon-xitongguanli"></i>
                     </span>
-                    <span class="star-navbar-iconText">系统管理</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
+						<span class="star-navbar-iconText">系统管理</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li">
+					<a>
+						<span class="star-navbar-iconbg">
                         <i class="iconfont icon-zhuanliguanli"></i>
                     </span>
-                    <span class="star-navbar-iconText">专利管理</span>
-                </a>
-            </li>
-        </ul>
-        <!-- 头部中间菜单 end-->
-        <!-- 头部右侧菜单 -->
-        <ul class="nav navbar-nav toolbar star-navbar-toolbar-ul1 pull-right">
+						<span class="star-navbar-iconText">专利管理</span>
+					</a>
+				</li>
+			</ul>
+			<!-- 头部中间菜单 end-->
+			<!-- 头部右侧菜单 -->
+			<ul class="nav navbar-nav toolbar star-navbar-toolbar-ul1 pull-right">
 
-            <li class="star-navbar-toolbar-li1">
-                <a>
-                    <span class="star-navbar-iconbg1">
+				<li class="star-navbar-toolbar-li1">
+					<a>
+						<span class="star-navbar-iconbg1">
                         <i class="fa fa-calendar"></i>
                         <span class="badge bg-red">6</span>
-                    </span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li1">
-                <div class="start-navbar-line"></div>
-            </li>
-            <li class="star-navbar-toolbar-li1">
-                <a href="javascript:;" class="star-user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    admin-admin<img src="https://colorlib.com/polygon/gentelella/images/img.jpg" alt="">
-                    <span class="glyphicon glyphicon-menu-down"></span>
-                  </a>
-                <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
-                </ul>
-            </li>
-        </ul>
-        <!-- 头部右侧菜单 end-->
-    </div>
-    <!-- 页面布局 -->
-    <div class="sub-wrapper">
-        <div class="star-layout-static">
-            <!-- 页面 右侧菜单布局-->
-            <div class="star-static-sidebar-wrapper">
-                <div class="star-sidebar-menu-wrapper">
-                    <!-- 页面 右侧菜单 -->
-                    <ul class="star-sidebar-menu">
-                        <li class="hasChild open">
-                            <a>
-                                <i class="fa fa-th-large"></i>
-                                <span>提案管理</span>
-                            </a>
-                            <ul class="star-sidebar-submenu">
-                                <li class="active">
-                                    <a>提案查询</a>
-                                </li>
-                                <li>
-                                    <a>提案查询</a>
-                                </li>
-                                <li>
-                                    <a>提案查询</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="hasChild">
-                            <a>
-                                <i class="fa fa-th-large"></i>
-                                <span>专利管理</span>
-                            </a>
-                            <ul class="star-sidebar-submenu">
-                                <li>
-                                    <a>提案查询</a>
-                                </li>
-                                <li>
-                                    <a>提案查询</a>
-                                </li>
-                                <li>
-                                    <a>提案查询</a>
-                                </li>
-                            </ul>
-                        </li>
+						</span>
+					</a>
+				</li>
+				<li class="star-navbar-toolbar-li1">
+					<div class="start-navbar-line"></div>
+				</li>
+				<li class="star-navbar-toolbar-li1">
+					<a href="javascript:;" class="star-user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+						admin-admin<img src="https://colorlib.com/polygon/gentelella/images/img.jpg" alt="">
+						<span class="glyphicon glyphicon-menu-down"></span>
+					</a>
+					<ul class="dropdown-menu dropdown-usermenu pull-right">
+						<li>
+							<a href="javascript:;">Help</a>
+						</li>
+						<li>
+							<a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- 头部右侧菜单 end-->
+		</div>
+		<!-- 页面布局 -->
+		<div class="sub-wrapper">
+			<div class="star-layout-static">
+				<!-- 页面 右侧菜单布局-->
+				<div class="star-static-sidebar-wrapper">
+					<div class="star-sidebar-menu-wrapper">
+						<!-- 页面 右侧菜单 -->
+						<ul class="star-sidebar-menu">
+							<li class="hasChild open">
+								<a>
+									<i class="fa fa-th-large"></i>
+									<span>提案管理</span>
+								</a>
+								<ul class="star-sidebar-submenu">
+									<li class="active">
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+								</ul>
+							</li>
+							<li class="hasChild">
+								<a>
+									<i class="fa fa-th-large"></i>
+									<span>专利管理</span>
+								</a>
+								<ul class="star-sidebar-submenu">
+									<li>
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+									<li>
+										<a>提案查询</a>
+									</li>
+								</ul>
+							</li>
 
-                    </ul>
-                    <!-- 页面 右侧菜单 end-->
-                </div>
-            </div>
-            <!-- 页面 右侧菜单布局 end-->
-            <!-- 页面内容 -->
-            <div class="star-static-content-wrapper">
-                <div class="row star-breadcrumb-row">
-                    <ol class="breadcrumb">
-                        <li><i class="fa fa-map-marker"></i>专利管理</li>
-                        <li>统计分析</li>
-                        <li class="active">汇总统计</li>
-                    </ol>
-                </div>
-                <div class="star-content-wrapper">
-                    <div class="row">
-                        <div class="btn-group col-md-12 patent-btn-group">
-                            <button class="btn btn-default btn-duli" type="button">
+						</ul>
+						<!-- 页面 右侧菜单 end-->
+					</div>
+				</div>
+				<!-- 页面 右侧菜单布局 end-->
+				<!-- 页面内容 -->
+				<div class="star-static-content-wrapper">
+					<div class="row star-breadcrumb-row">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-map-marker"></i>专利管理</li>
+							<li>统计分析</li>
+							<li class="active">汇总统计</li>
+						</ol>
+					</div>
+					<div class="star-content-wrapper">
+						<div class="row">
+							<div class="btn-group col-md-12 patent-btn-group">
+								<button class="btn btn-default btn-duli" type="button">
                                 <i class="fa fa-cog" style="margin-right:4px;"></i>发布给领导
                             </button>
-                        </div>
-                    </div>
-                    <div class="patent-hr"></div>
-                    <div>
-                        <div class="row">
-                            <div class="col-md-4">
+							</div>
+						</div>
+						<div class="patent-hr"></div>
+						<div>
+							<div class="row">
+								<div class="col-md-4">
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">查询结果</div>
-                                    <div class="panel-body">
-                                        <div id=tree></div>
-                                    </div>
-                                </div>
+									<div class="panel panel-default">
+										<div class="panel-heading">查询结果</div>
+										<div class="panel-body">
+											<div id=tree></div>
+										</div>
+									</div>
 
+								</div>
 
-                            </div>
+								<div class="col-md-8">
+									<div class="summary-search-wrap">
+										<form class="form-inline">
+											<div class="form-group star-form-item-div">
+												<label for="exampleInputName2">开始日期</label>
+												<input type="text" id="starttime" class="form-control">
+											</div>
 
-                            <div class="col-md-8">
-                                <div class="summary-search-wrap">
-                                    <form class="form-inline">
-                                        <div class="form-group star-form-item-div">
-                                            <label for="exampleInputName2">提案日期</label>
-                                            <input type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
-                                        </div>
-                                        <div class="form-group star-form-item-div">
-                                            <label for="exampleInputEmail2">组织机构</label>
-                                            <input type="text" class="form-control" name="birthdate" value="02/14/2017" >
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">统计</button>
-                                    </form>
-                                </div>
+											<div class="form-group star-form-item-div">
+												<label for="exampleInputName2">结束日期</label>
+												<input type="text" id="endtime" class="form-control">
+											</div>
 
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" style="height:42px;padding-left: 0px;">
-                                        <div class="btn-group col-md-12 patent-btn-group">
-                                            <button class="btn btn-default" type="button">
+											<div class="form-group star-form-item-div">
+												<label for="exampleInputEmail2">组织机构</label>
+												<input type="text" class="form-control" id="temptime">
+											</div>
+											<button type="submit" class="btn btn-primary">统计</button>
+										</form>
+									</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading" style="height:42px;padding-left: 0px;">
+											<div class="btn-group col-md-12 patent-btn-group">
+												<button class="btn btn-default" type="button">
                                                 <i class="fa fa-cog" style="margin-right:4px;"></i>发布给领导
                                             </button>
-                                            <button class="btn btn-default" type="button">
+												<button class="btn btn-default" type="button">
                                                 <i class="fa fa-cog" style="margin-right:4px;"></i>发布给领导
                                             </button>
-                                        </div>
-                                        </div>
-                                    <div class="panel-body">
-                                        
-                                    </div>
-                                </div>
+											</div>
+										</div>
+										<div class="panel-body">
 
-                                <div class="">
-                                    <table class="table table-striped table-bordered jambo_table bulk_action">
-                                        <thead>
-                                            <tr class="headings">
-                                                <th class="column-title">序号</th>
-                                                <th class="column-title">提案日期</th>
-                                                <th class="column-title">提案人</th>
-                                                <th class="column-title">承办日期</th>
-                                                <th class="column-title">内部承办人</th>
-                                                <th class="column-title">申请专利类型</th>
-                                                <th class="column-title">发明人</th>
-                                                <th class="column-title">评审状态</th>
-                                                <th class="column-title">评审状态</th>
-                                            </tr>
-                                        </thead>
+										</div>
+									</div>
 
-                                        <tbody>
-                                            <tr class="even pointer">
+									<div class="">
+										<table class="table table-striped table-bordered jambo_table bulk_action">
+											<thead>
+												<tr class="headings">
+													<th class="column-title">序号</th>
+													<th class="column-title">提案日期</th>
+													<th class="column-title">提案人</th>
+													<th class="column-title">承办日期</th>
+													<th class="column-title">内部承办人</th>
+													<th class="column-title">申请专利类型</th>
+													<th class="column-title">发明人</th>
+													<th class="column-title">评审状态</th>
+													<th class="column-title">评审状态</th>
+												</tr>
+											</thead>
 
-                                                <td class=" ">1</td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                            </tr>
-                                            <tr class="odd pointer">
+											<tbody>
+												<tr class="even pointer">
 
-                                                <td class=" ">2</td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                                <td class=" "></td>
-                                            </tr>
+													<td class=" ">1</td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+												</tr>
+												<tr class="odd pointer">
 
-                                        </tbody>
-                                    </table>
-                                </div>        
-                            </div>
-                        </div>
+													<td class=" ">2</td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+													<td class=" "></td>
+												</tr>
 
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
 
-
-                        <!-- 页面内容 end-->
-                    </div>
-                </div>
-                <!-- 页面布局 end-->
-                <script src="<!-- @echo WEB_ROOT -->js/vendors.js"></script>
-                <!-- @if NODE_ENV!='production' -->
-                <!-- build:js /js/index.min.js -->
-                <script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
-                <script src="<!-- @echo WEB_ROOT -->js/summary.js"></script>
-                <!-- endbuild -->
-                <!--@endif-->
-                <!-- @if NODE_ENV=='production' -->
-                <script src="<!-- @echo WEB_ROOT -->js/index.min.js"></script>
-                <!--@endif-->
-                <script>
-    $(function() {
-        App.init();
-        Summary.init();
-    })
-</script>
-</body>
+							<!-- 页面内容 end-->
+						</div>
+					</div>
+					<!-- 页面布局 end-->
+					<script src="<!-- @echo WEB_ROOT -->js/vendors.js"></script>
+					<!-- @if NODE_ENV!='production' -->
+					<!-- build:js /js/index.min.js -->
+					<script src="<!-- @echo WEB_ROOT -->js/app.js"></script>
+					<script src="<!-- @echo WEB_ROOT -->js/summary.js"></script>
+					<!-- endbuild -->
+					<!--@endif-->
+					<!-- @if NODE_ENV=='production' -->
+					<script src="<!-- @echo WEB_ROOT -->js/index.min.js"></script>
+					<!--@endif-->
+					<script>
+						$(function() {
+							App.init();
+							Summary.init();
+						})
+					</script>
+	</body>
 
 </html>
