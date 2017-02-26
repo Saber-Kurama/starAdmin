@@ -24,52 +24,19 @@
         <!-- 头部中间菜单-->
         <ul class="nav navbar-nav toolbar star-navbar-toolbar-ul">
             <li class="star-navbar-toolbar-li active">
-                <a>
+                <a data-toggle="dropdown">
                     <span class="star-navbar-iconbg">
                         <i class="iconfont icon-home"></i>
                     </span>
                     <span class="star-navbar-iconText">首页</span>
+                    <span class="star-navbar-right glyphicon glyphicon-menu-down"></span>
                 </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
-                        <i class="iconfont icon-chuangyitian"></i>
-                    </span>
-                    <span class="star-navbar-iconText">创新提案</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
-                        <i class="iconfont icon-zhuanlipingshen"></i>
-                    </span>
-                    <span class="star-navbar-iconText">专利评审</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
-                        <i class="iconfont icon-pinpaiguanli"></i>
-                    </span>
-                    <span class="star-navbar-iconText">品牌管理</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
-                        <i class="iconfont icon-xitongguanli"></i>
-                    </span>
-                    <span class="star-navbar-iconText">系统管理</span>
-                </a>
-            </li>
-            <li class="star-navbar-toolbar-li">
-                <a>
-                    <span class="star-navbar-iconbg">
-                        <i class="iconfont icon-zhuanliguanli"></i>
-                    </span>
-                    <span class="star-navbar-iconText">专利管理</span>
-                </a>
+                <ul class="dropdown-menu star-navbar-toolbar-menu">
+                    <li><a href="javascript:;">专利管理</a></li>
+                    <li><a href="javascript:;">专利管理</a></li>
+                    <li class="active"><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;">专利管理</a></li>
+                </ul>
             </li>
         </ul>
         <!-- 头部中间菜单 end-->
@@ -108,6 +75,9 @@
                 <div class="star-sidebar-menu-wrapper">
                     <!-- 页面 右侧菜单 -->
                     <ul class="star-sidebar-menu">
+                        <li class="breadcrumb">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </li>    
                         <li class="hasChild open">
                             <a>
                                 <i class="fa fa-th-large"></i>

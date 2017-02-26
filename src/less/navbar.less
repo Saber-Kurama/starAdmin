@@ -27,19 +27,27 @@
     background-size: cover;
 }
 .star-navbar-toolbar-ul > li > a{
-    padding: 20px 5px;
+    // padding: 20px 5px;
+    padding: 0;
+    width: 160px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
 }
 .star-navbar-iconbg{
+    position: absolute;
     display: inline-block;
     border-radius: 14px;
     border: 1px solid #8ecffa;
     padding: 0;
     line-height: 28px;
     font-size: 16px;
-    text-align: center;
+    // text-align: center;
     height: 28px;
     width: 28px;
     color: #8ecffa;
+    left: 10px;
+    top: 20px;
 }
 .star-navbar-iconText{
     display: inline-block;
@@ -47,8 +55,15 @@
     color: #8ecffa;
 }
 
+.star-navbar-right{
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 28px;
+}
+
 .nav > li.star-navbar-toolbar-li > a:focus, .nav > li.star-navbar-toolbar-li > a:hover{
-    background-color: #1a9eee;
+    background-color: #3da7fc;
     .star-navbar-iconbg{
         border: 1px solid #fff;
         color: #fff;
@@ -60,7 +75,7 @@
 
 .star-navbar-toolbar-li.active{
     &::after{
-        content: ' ';
+        // content: ' ';
         // width: 10px;
         // height: 10px;
         border: 6px solid #fff;
@@ -83,6 +98,7 @@
 
 .star-navbar-toolbar-ul1 > li > a{
     padding: 16px 5px;
+    
 }
 
 .nav.star-navbar-toolbar-ul1  > li> a:focus, .nav.star-navbar-toolbar-ul1 > li > a:hover{
@@ -132,5 +148,35 @@
         border-radius: 50%;
         margin-left: 10px;
 
+    }
+}
+
+
+.nav.star-navbar-toolbar-ul .open>a, .nav.star-navbar-toolbar-ul .open>a:focus, .nav.star-navbar-toolbar-ul .open>a:hover {
+    background-color: #3da7fc;
+    border-color: #3da7fc;
+}
+
+
+.star-navbar-toolbar-menu{
+    background: #3da7fc;
+    border-color: #3da7fc;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    >li{
+        background-color: #3da7fc;
+        >a,&>a:focus, &>a:hover{
+            background-color: #3da7fc;
+            color: #fff;
+        }
+        
+    }
+    >li.active{
+        >a,&>a:focus, &>a:hover{
+            background-color: #fff;
+            color: #3da7fc;
+        }
+        
     }
 }
